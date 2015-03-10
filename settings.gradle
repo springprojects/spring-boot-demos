@@ -2,3 +2,5 @@ rootProject.name = 'spring-boot-demos'
 
 include 'hello-world'
 
+include 'hello-world-a'
+
