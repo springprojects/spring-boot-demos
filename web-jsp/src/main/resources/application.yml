@@ -1,0 +1,13 @@
+server:
+  contextPath: /web-jsp
+  port: 8077
+logging:
+  file: build/web-jsp.log
+  level:
+    com.gaodashang.demo: DEBUG
+spring:
+  view:
+    prefix: /WEB-INF/jsp/
+    suffix: .jsp
+application:
+  message: Hello Phil
