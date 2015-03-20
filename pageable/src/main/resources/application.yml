@@ -1,0 +1,21 @@
+server:
+  contextPath: /pageable
+  port: 8077
+logging:
+  file: build/pageable.log
+  level:
+    com.gaodashang.demo: DEBUG
+spring.datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/world?useUnicode=true&amp;characterEncoding=UTF-8
+  username: root
+  password: mm885710
+spring:
+  jpa:
+    ddl-create: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: com.gaodashang.demo.MySQLUpperCaseStrategy
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database: MySQL
+    show-sql: true
