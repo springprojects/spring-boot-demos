@@ -7,3 +7,5 @@ include 'hello-world-a'
 include 'web-jsp'
 include 'pageable'
 
+include 'scala-demo'
+

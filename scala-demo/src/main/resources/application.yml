@@ -1,0 +1,32 @@
+server:
+  contextPath: /scala-demo
+  port: 8077
+logging:
+  file: target/scala-demo.log
+  level:
+    com.gaodashang.demo: DEBUG
+spring.datasource:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/world?useUnicode=true&amp;characterEncoding=UTF-8
+  username: root
+  password: cccc
+spring:
+  jpa:
+    ddl-create: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: com.gaodashang.demo.MySQLUpperCaseStrategy
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    database: MySQL
+    show-sql: true
+messagepush:
+  iphone:
+    key: iphonekey.p12
+    password: 112233
+
+wechat:
+  appid: wxadb42158ccccc
+  secret: af51cc7ec86abedasdsfasdfasdfasdf
+  accessTokenUrl: https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${wechat.appid}&secret=${wechat.secret}
+  jsApiTicketUrl: https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token={0}&type=jsapi
+  nonce: gaodanshang
