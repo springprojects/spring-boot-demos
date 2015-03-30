@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        maven {
+            url "http://repo.spring.io/libs-release"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.2.RELEASE")
+    }
+}
+
+apply plugin: 'spring-boot'
+apply plugin: 'java'
+
+mainClassName = "com.gaodashang.demo.MainApplicationConfiguration"
+
+sourceCompatibility = 1.8
+version = '1.0.0'
+
+jar {
+    baseName = 'hello-world-cmd'
+    version =  '1.0.0'
+}
+
+repositories {
+    maven { url "http://repo.spring.io/libs-snapshot" }
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile("org.springframework.boot:spring-boot-starter")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+task "create-dirs" << {
+    sourceSets*.java.srcDirs*.each { it.mkdirs() }
+    sourceSets*.resources.srcDirs*.each { it.mkdirs() }
+}

@@ -9,3 +9,5 @@ include 'pageable'
 
 include 'scala-demo'
 
+include 'hello-world-cmd'
+
