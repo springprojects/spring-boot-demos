@@ -6,6 +6,7 @@ package com.gaodashang.demo.domain;
  * @author eva
  */
 public class User {
+
     private Long id;
 
     private String name;

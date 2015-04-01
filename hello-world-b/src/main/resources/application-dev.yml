@@ -1,6 +1,6 @@
 server:
   contextPath: /hello-world-b
-  port: 8088
+  port: 8077
 logging:
   file: build/hello-world-b.log
   level:

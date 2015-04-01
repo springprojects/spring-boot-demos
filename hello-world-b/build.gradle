@@ -5,7 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.2.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
     }
 }
 
@@ -28,6 +28,7 @@ configurations {
 }
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 version = '1.0.0'
 
 repositories {

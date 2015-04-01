@@ -1,0 +1,7 @@
+server:
+  contextPath: /hello-world-c
+  port: 8077
+logging:
+  file: build/hello-world-c.log
+  level:
+    com.gaodashang.demo: DEBUG
