@@ -2,7 +2,7 @@ server:
   contextPath: /scala-demo
   port: 8077
 logging:
-  file: target/scala-demo.log
+  file: build/scala-demo.log
   level:
     com.gaodashang.demo: DEBUG
 spring.datasource:

@@ -1,7 +1,7 @@
 server:
-  contextPath: /hello-world-a
+  contextPath: /hello-world-cmd
   port: 8077
 logging:
-  file: build/hello-world-a.log
+  file: build/hello-world-cmd.log
   level:
     com.gaodashang.demo: DEBUG

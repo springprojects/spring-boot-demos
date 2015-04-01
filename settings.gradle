@@ -11,3 +11,5 @@ include 'scala-demo'
 
 include 'hello-world-cmd'
 
+include 'hello-world-b'
+

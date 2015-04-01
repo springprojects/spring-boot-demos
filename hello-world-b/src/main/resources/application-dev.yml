@@ -1,0 +1,11 @@
+server:
+  contextPath: /hello-world-b
+  port: 8088
+logging:
+  file: build/hello-world-b.log
+  level:
+    com.gaodashang.demo: DEBUG
+context:
+  listener:
+    classes:
+      com.gaodashang.demo.ApplicationStartup
