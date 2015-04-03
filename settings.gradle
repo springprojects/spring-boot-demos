@@ -13,9 +13,11 @@ include 'hello-world-cmd'
 
 include 'hello-world-b'
 
-include 'gs-spring-boot'
-
 include 'hello-world-c'
 
 include 'hello-world-d'
+
+include 'hello-world-e'
+
+include 'hello-world-f'
 
