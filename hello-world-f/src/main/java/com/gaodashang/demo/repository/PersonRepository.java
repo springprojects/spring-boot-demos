@@ -26,4 +26,7 @@ public interface PersonRepository extends PagingAndSortingRepository<Person, Lon
 	@Query("select p from Person p where p.firstName = :firstName and p.lastName = :lastName")
 	List<Person> querySql2(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
+	@Query(nativeQuery = true, value = "SELECT d.* FROM person d WHERE d.id = :id ")
+	List<Person> queryNativeSql(@Param("id") Long id);
+
 }

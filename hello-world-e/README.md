@@ -108,7 +108,7 @@ Date: Fri, 03 Apr 2015 04:05:48 GMT
 * Connection #0 to host 192.168.1.99 left intact
 
 C:\Users\Administrator
-λ ccurl "http://192.168.1.99:8077/hello-world-e/"
+λ curl "http://192.168.1.99:8077/hello-world-e/"
 {
   "_links" : {
     "people" : {

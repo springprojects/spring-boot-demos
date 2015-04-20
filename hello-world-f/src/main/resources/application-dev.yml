@@ -20,3 +20,6 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5Dialect
     database: MySQL
     show-sql: true
+  data:
+    rest:
+      useHalAsDefaultJsonMediaType: false
